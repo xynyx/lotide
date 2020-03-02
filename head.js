@@ -6,9 +6,7 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(2, "2");
 
-const head = function(arr) {
-  return arr.shift();
-}
+const head = arr => arr.shift();
 
 
 assertEqual(head([5,6,7]), 5);
