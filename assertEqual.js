@@ -2,6 +2,12 @@ const assertEqual = function(actual, expected) {
   (actual === expected) ? console.log(`😇😇😇 Assertion Passed: ${actual} === ${expected}`) : console.log(`😡😡😡 Assertion Failed: ${actual} !== ${expected}`);
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(2, "2");
+let eqArrays = function(array1, array2) {
+  let trueOrFalse;
+  for (let i = 0; i < array1.length; i++) {
+    (array1[i] === array2[i]) ? trueOrFalse = true : trueOrFalse = false;
+  }
+  console.log(trueOrFalse);
+  return trueOrFalse;
+};
+
