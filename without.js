@@ -1,19 +1,3 @@
-const assertArraysEqual = function(array1, array2) {
-  eqArrays(array1, array2) ? console.log(`😇😇😇 Assertion Passed: ${array1} === ${array2}`) : console.log(`😡😡😡 Assertion Failed: ${array1} !== ${array2}`)
-};
-
-let eqArrays = function(array1, array2) {
-  for (let i = 0; i < array1.length; i++) {
-    if (array1.length !== array2.length) {
-      return false;
-    }
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
 let without = function (source, cut) {
   let newArray = source.slice();
   // splice() to remove part of array
@@ -27,6 +11,9 @@ let without = function (source, cut) {
   return newArray;
 };
 
-console.log(without([1, 2, 3], [1])) // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
+const assertArraysEqual = require('./assertArraysEqual');
+
+
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]) // => [2, 3]
+// console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
     

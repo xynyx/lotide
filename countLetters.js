@@ -1,8 +1,4 @@
-const assertEqual = function(actual, expected) {
-  (actual === expected) ? console.log(`😇😇😇 Assertion Passed: ${actual} === ${expected}`) : console.log(`😡😡😡 Assertion Failed: ${actual} !== ${expected}`);
-};
-
-let countLetters = function(string) {
+const countLetters = function(string) {
   string = string.replace(/ /g, '');
   // let is used for primitive data types that will be modified
   const results = {};
@@ -16,5 +12,7 @@ let countLetters = function(string) {
   return results;
 };
 
-console.log(countLetters("HELLO"))
+const assertEqual = require('./assertEqual');
+
+assertEqual(countLetters("HELLO"), { H: 1, E: 1, L: 2, O: 1 })
 console.log(countLetters("lighthouse in the house"));

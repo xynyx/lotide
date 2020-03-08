@@ -1,4 +1,4 @@
-let eqArrays = function(array1, array2) {
+let eqArraysRecursion = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     // Check length first, because if they are not the same length, return false immediately
     if (array1[i].length !== array2[i].length) {
@@ -19,16 +19,16 @@ let eqArrays = function(array1, array2) {
   return true;
 };
 
-
+const eqArrays = require('./eqArrays');
 
 // console.log(eqArrays([1, 2, 3], [1, 2, 3]));
 
-console.log(eqArrays([[2, 3], [4]], [[2, 3], [4]])); // => true
+eqArraysRecursion([[2, 3], [4]], [[2, 3], [4]]); // => true
 
 // eqArrays([[2, 3], [4]] // [[2, 3], [4]])
 
-console.log(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]])); // => false
+eqArraysRecursion([[2, 3], [4]], [[2, 3], [4, 5]]); // => false
 
 // console.log(eqArrays([[2, 3], [4]],  // [[2, 3], [4, 5]])) // => false
 
-console.log(eqArrays([[2, 3], [4]], [[2, 3], 4])); // => false
+// eqArraysRecursion([[2, 3], [4]], [[2, 3], 4]); // => false
