@@ -15,6 +15,7 @@ const letterPositions = function(sentence) {
 };
 
 const assertArraysEqual = require('./assertArraysEqual');
+module.exports = letterPositions;
 
 // console.log(letterPositions("lighthouse in the house"));
 

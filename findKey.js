@@ -8,6 +8,7 @@ let findKey = function(object, callback) {
 };
 
 const assertEqual = require('./assertEqual');
+module.exports = findKey;
 
 let result = findKey({
   "Blue Hill": { stars: 1 },

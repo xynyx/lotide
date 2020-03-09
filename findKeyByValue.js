@@ -8,6 +8,7 @@ let findKeyByValue = function(genres, show) {
 };
 
 const assertEqual = require('./assertEqual');
+module.exports = findKeyByValue;
 
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",

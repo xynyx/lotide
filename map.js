@@ -10,6 +10,7 @@ const map = function(array, callback) {
 };
 
 const assertArraysEqual = require('./assertArraysEqual');
+module.exports = map;
 
 const results1 = map(words, word => word[0]);
 const results2 = map(words, word => word + "y");
