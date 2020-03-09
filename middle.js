@@ -12,12 +12,4 @@ let middle = function(array) {
   return returnedArray;
 };
 
-const assertArraysEqual = require('./assertArraysEqual');
-
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
-
-// console.log(middle([1]));
-// console.log(middle([1, 2]));
-// console.log(middle([1, 2, 3, 4, 5]));
-// console.log(middle([1, 2, 3, 4, 5, 6]));
+module.exports = middle;

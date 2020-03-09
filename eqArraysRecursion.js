@@ -20,6 +20,7 @@ let eqArraysRecursion = function(array1, array2) {
 };
 
 const eqArrays = require('./eqArrays');
+module.exports = eqArraysRecursion
 
 // console.log(eqArrays([1, 2, 3], [1, 2, 3]));
 

@@ -13,6 +13,7 @@ const countLetters = function(string) {
 };
 
 const assertEqual = require('./assertEqual');
+module.exports = countLetters;
 
 assertEqual(countLetters("HELLO"), { H: 1, E: 1, L: 2, O: 1 })
 console.log(countLetters("lighthouse in the house"));

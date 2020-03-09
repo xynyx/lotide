@@ -13,6 +13,7 @@ const countOnly = function(allItems, itemsToCount) {
 }
 
 const assertEqual = require('./assertEqual');
+module.exports = countOnly;
 
 const firstNames = [
   "Karl",

@@ -9,6 +9,7 @@ const assertObjectsEqual = function(object1, object2) {
 };
 
 const eqObjects = require('./eqObjects');
+module.exports = assertObjectsEqual;
 
 
 assertObjectsEqual({ a: "1", b: "2" }, { b: "2", a: "1" });
