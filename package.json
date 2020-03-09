@@ -6,11 +6,10 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "mocha": "^7.1.0",
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0"
   },
   "scripts": {
     "test": "mocha"

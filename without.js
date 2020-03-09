@@ -11,10 +11,4 @@ let without = function (source, cut) {
   return newArray;
 };
 
-const assertArraysEqual = require('./assertArraysEqual');
 module.exports = without;
-
-
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3]) // => [2, 3]
-// console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
-    

@@ -44,4 +44,4 @@ The following functions are currently implemented:
 * `middle(array)`: Given an array, return the middle value
 * `tail(array)`: Given an array, return the values after the first value
 * `takeUntil(array, callback)`: Given an array, return modified array, stopping at the inputted callback function
-* `without(source, cut)`: Will return an array that removes given cut calues
+* `without(source, cut)`: Will return an array that removes given cut values
